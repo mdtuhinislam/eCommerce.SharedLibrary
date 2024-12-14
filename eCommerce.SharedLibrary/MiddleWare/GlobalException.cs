@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 using System.Text.Json;
-using System.Threading.Tasks;
 using eCommerce.SharedLibrary.Logs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +11,7 @@ namespace eCommerce.SharedLibrary.MiddleWare
         public async Task InvokeAsync(HttpContext context)
         {
             // declare variables
-            string message = "Sorry, Internal server error occured, please try again.";
+            string message = "Sorry, Internal server error occurred, please try again.";
             string title = "Error";
             int statusCode = (int)HttpStatusCode.InternalServerError;
 

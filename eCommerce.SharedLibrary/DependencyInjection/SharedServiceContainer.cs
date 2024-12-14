@@ -17,7 +17,7 @@ namespace eCommerce.SharedLibrary.DependencyInjection
             option.UseSqlServer(config.GetConnectionString("eCommerceConnectionString"), sqlServerOptions =>
             sqlServerOptions.EnableRetryOnFailure()));
 
-            //serilog config
+            //Serilog config
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .WriteTo.Debug()
